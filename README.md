@@ -1,8 +1,13 @@
+ <h1>Belajar Bahasa Pemrograman PHP</h1>
+<img align="left" width="100" height="100" src="https://avatars.githubusercontent.com/AnandaCahya">
+
 # Selamat datang
 
 Terimakasih telah menggunakan repo saya untuk belajar dan mencari apa yang ingin kalian ketahui. Kurang lebih semua yang disini adalah hasil praktek saya terhadap bahasa `PHP`. Jadi kalian hany melihat contoh dari sintak sintaks saja yang saya kelompokkan ke masing masing folder. Sama sama belajar ya!
 
 Oke baiklah selamat mencoba 🥰
+
+> Jika ada kesalahan silahkan sampaikan di issues akan saya periksa dan revisi
 
 ## Permulaan
 
@@ -92,27 +97,27 @@ Oke mudahnya bisa dicoba langsung menggunakan `Belajar PHP\1. Sintaks Dasar\Outp
 
 ```php
 // Untuk ini bisa langsung seperti ini
-echo "Nama saya Ananda"
+echo "Nama saya Ananda";
 ```
 
 - print
 
 ```php
 // Cara penulisannya juga sama dengan yang diatas
-print "Nama saya adalah Panji"
+print "Nama saya adalah Panji";
 ```
 
 - print_r
 
 ```php
 // Nah yang ini menggunakan tanda kurung
-print_r("Nama saya Adalah Ananda")
+print_r("Nama saya Adalah Ananda");
 ```
 - var_dump
 
 ```php
 // Untuk yang ini sama seperti print_r dia membutuhkan tanda kurung
-var_dump("Nama saya Ananda")
+var_dump("Nama saya Ananda");
 ```
 
 Namun untuk yang ini spesial ya. Dimana dia akan menampilkan detail dari variabel yang contohnya akan tampil begini
@@ -170,8 +175,8 @@ Bisa ya. Kalau tidak percaya silahkan coba ini
     <title>HTML dengan PHP Didalamnya</title>
 </head>
 <body>
-    <h1>Selamat di Portofolio saya, Nama saya <?php echo "Ananda Cahya" ?></h1>
-    <h4>Role saya lebih sering ke bagian <?php echo "Frontend Developer" ?></h4>
+    <h1>Selamat di Portofolio saya, Nama saya <?php echo "Ananda Cahya"; ?></h1>
+    <h4>Role saya lebih sering ke bagian <?php echo "Frontend Developer"; ?></h4>
 </body>
 </html>
 ```
@@ -192,7 +197,7 @@ Sama seperti yang ditulis untuk yang satu ini kita akan mengeluarkan html menggu
     <p>
         <?php
         //Didalamnya ada html
-        echo "Saya adalah proggramer berasal dari <b>Indonesia</b>"
+        echo "Saya adalah proggramer berasal dari <b>Indonesia</b>";
         ?>
     </p>
 </body>
@@ -208,18 +213,14 @@ Bisa dilihat disana terdapat tulisan indonesia yang di bold agar menjadi lebih t
 Untuk penulisan variabel sama seperti bahasa javascript ataupun python dimana dia tidak perlu menuliskan tipe data
 
 ```php
-<?php 
-$nama = "Andi"
-?>
+$nama = "Andi";
 ```
 
 Contoh tipe data lain:
 
 ```php
-<?php 
-$nama = "Andi"
-$umur = 17
-?>
+$nama = "Andi";
+$umur = 17;
 ```
 
 Oke saatnya membahas tentang tanda petik. Untuk tanda petik " dalam bahasa php ini memiliki kemampuan spesial. Dia menggunakan interpolasi atau gampangannya dia bisa memanggil variabel kedalam string. Sebagai contoh seperti ini
@@ -231,3 +232,150 @@ echo "Nama saya adalah $nama";
 ```
 
 Nah silahkan di [coba](/1.%20Sintaks%20Dasar/Variabel.php)
+
+### 1.4 Operator
+Untuk operator yang umum ada di semua bahasa pemrograman ada pada bahasa php ini. Diantaranya adalah
+
+Simbol | Jenis | Peruntukan
+---|---|---
+| `+` | Aritmatika | Penjumlahan
+| `-` | Aritmatika | Pengurangan
+| `*` | Aritmatika | Perkalian
+| `/` | Aritmatika | Pembagian
+| `%` | Aritmatika | Menghitung sisa pembagian
+| `.` | Concat | Menggabungkan string
+| `=` | Assignment | Menetapkan Nilai
+| `+` | Assignment | Penjumlahan serta menetapkan nilai
+| `-` | Assignment | Pengurangan serta menetapkan nilai |
+| `*` | Assignment | Perkalian serta menetapkan nilai
+| `/` | Assignment | Pembagian serta menetapkan nilai
+| `%` | Assignment | Menghitung sisa pembagian serta menetapkan nilai
+| `.` | Assignment Concat | Menggabungkan string serta menetapkan nilai
+| `<` | Perbandingan | Digunakan untuk melihat bilangan yang lebih kecil
+| `>` | Perbandingan | Digunakan untuk melihat bilangan yang lebih besar
+| `<=` | Perbandingan | Digunakan untuk melihat bilangan yang lebih kecil atau sama
+| `>=` | Perbandingan | Digunakan untuk melihat bilangan yang lebih besar atau sama
+| `!=` | Perbandingan | Melihat apabila jawaban sebenarnya bukan itu
+| `===` | Identitas | Melihat apakah nilai dan tipe data sama
+| `!==` | Identitas | Melihat apakah nilai dan tipe data tidak sama
+| `&&` | Logika | Melihat apakah seluruh nilai benar
+| `\|\|` | Logika | Melihat apakah salah satunya benar
+| ! | Logika | Membalik nilai yang benar 
+
+Kalau begitu ssekarang bagaimana cara menggunakannya
+
+#### 1.4.1 Aritmatika
+Bisa dilihat di [Tabel Operator](#14-operator) bahwa dalam bahasa pemrograman terdapat matematika jua yang dapat kalian manfaatkan sebagai contoh
+
+```php
+$angka = 3 + 2;
+echo $angka;
+```
+
+Maka akan keluar angka 5. Namun kalian juga bisa membuatnya terlihat singkat seperti ini
+
+```php
+echo 3 + 2;
+```
+
+Apakah selain penjumlahan memiliki cara yang sama? Ya benar aritmatika semua caranya adalah sama
+
+[Coba aritmatika](/1.%20Sintaks%20Dasar/OperatorAritmatika.php)
+
+```php
+echo 5 + 3;
+echo 5 - 3;
+echo 5 * 3;
+echo 5 / 3;
+echo 5 % 3;
+```
+
+#### 1.4.2 Concatenation
+
+Fungsinya adalah menggabungkan 2 string atau lebih menjadi satu string sebagai contoh adalah ini
+
+```php
+$nama_depan = "Ananda";
+$nama_belakang = "Cahya";
+
+//Maka cara menggunakannya adalah
+echo $nama_depan . " " . $nama_belakang;
+```
+
+Ataupun seperti ini
+
+```php
+$nama = $nama_depan . " " . $nama_belakang;
+
+echo "Nama saya adalah $nama";
+```
+
+#### 1.4.3 Assignment
+
+Untuk ini tentunya untuk menetapkan nilai. Sesuai namanya assign yang artinya tetapkan
+
+```php
+$angka = 3 + 2;
+echo $angka;
+```
+
+Kita ambil contoh sebelumnya nah ini adalah assignment ke variabel. Terus yang aritmatika fungsinya apa?. Nah kira kira begini
+
+```php
+$umur = 18
+$umur += 5
+```
+
+Berfungsi? Ya tentu maka umur berubah menjadi 23 karena 18 + 5 sama dengan 23. Kemudian dia menetapkan nilai pada variabel umur secara langsung
+
+Kalau string? Iya begini
+
+```php
+$nama = "Ananda"
+$nama .= " "
+$nama .= "Cahya"
+```
+
+Seharusnya menjadi Ananda Cahya
+
+#### 1.4.4 Perbandingan
+
+Sama seperti namanya yang artinya membandingkan mana yang tertinggi dan terendah, Itu adalah fungsi dari operator ini. Yang sering digunakan adalah lebih besar dan lebih kecil dari. Bagaimana cara menggunakannya
+
+```php
+var_dump(10 > 5)
+```
+
+Nah sebagai contoh kita akan menggunakan var dump untuk mengetahui nilai jawabannya. 10 kan lebih besar dari 5 maka harusnya dia bener dong. Nah dijawablah true sama si perbandingan. Silahkan di coba
+
+#### 1.4.5 Identitas
+
+Nah yang ini fungsinya adalah untuk memeriksa apakah jawaban dari 2 variabel sama dan memiliki tipe data yang sama juga
+
+Contoh
+
+```php
+var_dump(10 === "10")
+```
+Apakah benar. Tidak salah, jika programnya membaca ini akan beranggapan hal yang sama. Lho salahnya dimana kan sama sama sepuluhnya. Nggak bisa ya, karena sepuluhnya itu satu bilangan bulat dan satunya teks atau string
+
+```php
+var_dump(10 !== "10")
+```
+Kalau ini baru benar karena dia butuh validasi jika mereka itu berbeda, dan ternyata beneran berbeda maka dia akan mengiyakan.
+
+#### 1.4.6 Logika
+
+Untuk ini dia fungsinya adalah untuk memastikan jika terdapat 2 perbandingan yang memiliki jawaban yang sama atau tidak
+
+```php
+var_dump(10 > 5 && 3 > 4)
+```
+
+Sebagai contoh ini nah dia memiliki 2 jawaban berbeda. Antara satu benar dan satunya lagi salah. Untuk itu karena dia membutuhkan keduanya benar dia akan menjawab hasil dari perbandingan keduanya tidak memenuhi syaratnya atau `false`
+
+```php
+var_dump(10 > 5 || 3 > 4)
+```
+
+Berbeda dengan sebelumnya. Kali ini dia hany membutuhkan salah satunya benar. Maka dia akan mengiyakan dan menganggap sudah menenuhi syarat.

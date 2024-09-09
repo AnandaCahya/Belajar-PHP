@@ -39,7 +39,7 @@ Akan lebih muda jika dibandingkan antara 1 dan "1". Dua ini memiliki tipe data y
 var_dump(3 === "3"); //Kan ini berbeda tuh. Nah jawabannya false
 var_dump(3 !== "3"); //Nah karena dia melihat apakah keduanya berbeda. Maka jawabannya adalah true
 
-// * --------------------------- 7.2. Operator Logika PHP
+// * --------------------------- 7.3. Operator Logika PHP
 
 /*
 ? Apa ini?

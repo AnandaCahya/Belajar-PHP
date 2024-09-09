@@ -1,3 +1,6 @@
+<?php
+// --------------------------- 2. Penulisan Sintaks PHP
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -4,7 +4,7 @@ Terimakasih telah menggunakan repo saya untuk belajar dan mencari apa yang ingin
 
 Oke baiklah selamat mencoba 🥰
 
-##
+## Permulaan
 
 ### Instalasi
 
@@ -12,9 +12,7 @@ Ada 2 cara untuk menggunakan PHP. Yaitu Client Side dan Server Side. Apa itu
 
 `client-side merujuk pada segala sesuatu yang terjadi di sisi pengguna (browser)` Yang artinya apa yang dilihat oleh user atau pengunjung web itu adalah client side proggraming. Sebaliknya yang tidak dapat dilihat oleh pengguna adalah `server-side`
 
-#### Instalasi
-
-##### Web / Client Side
+#### Web / Client Side
 
 1. Silahkan install `XAMPP`, `LAMPP`, `MAMPP`, `WAMPP`. (Pilih salah satu, Untuk Windows saya rekomendasikan menggunakan `XAMPP` dan Linux `LAMP`)
 2. Kalau sudah jalankan buka aplikasi. Silahkan `start` pada bagian Apache
@@ -31,7 +29,7 @@ Letakkan Folder yang kalian downlad disitu. Agar bisa kalian lihat hasil PHPNya 
 
 ![Seperti ini](/github/contoh_folder_belajar.png)
 
-##### Server / Server Side
+#### Server / Server Side
 
 1. [Download](https://www.php.net/downloads.php) PHP terlebih dahulu. Pilih sesuai dengan sistem operasi kalian
 2. Kemudian jalankan setup dari PHP ini. Untuk caranya berbeda beda setiap sistem operasi
@@ -50,6 +48,11 @@ sudo pacman -S php
 ```bash
 sudo apt install php
 ```
+
+4. Cara membuka foldernya? Coba gunakan `cd` dimana kalian letakkan folder tadi
+5. Cara menjalankan nya? Gunakan langsung `php test.php` ganti test.php menjadi nama dile kalian
+
+**Untuk instalasi dan detail tentang ini jika kurang jelas bisa cari tutorial instalasi yang lebih jelas**
 
 ## Catatan
 
@@ -199,3 +202,32 @@ Sama seperti yang ditulis untuk yang satu ini kita akan mengeluarkan html menggu
 Bisa dilihat disana terdapat tulisan indonesia yang di bold agar menjadi lebih tebal
 
 [Coba semua Sintaks Dasar](/1.%20Sintaks%20Dasar/PenulisanSintaks.php)
+
+### 1.3 Variabel dan Tipe Data
+
+Untuk penulisan variabel sama seperti bahasa javascript ataupun python dimana dia tidak perlu menuliskan tipe data
+
+```php
+<?php 
+$nama = "Andi"
+?>
+```
+
+Contoh tipe data lain:
+
+```php
+<?php 
+$nama = "Andi"
+$umur = 17
+?>
+```
+
+Oke saatnya membahas tentang tanda petik. Untuk tanda petik " dalam bahasa php ini memiliki kemampuan spesial. Dia menggunakan interpolasi atau gampangannya dia bisa memanggil variabel kedalam string. Sebagai contoh seperti ini
+
+```php
+$nama = "Ananda";
+
+echo "Nama saya adalah $nama";
+```
+
+Nah silahkan di [coba](/1.%20Sintaks%20Dasar/Variabel.php)

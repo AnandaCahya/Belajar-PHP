@@ -34,7 +34,9 @@ Pada tahun 2004 muncul nih PHP 5 Dengan fitur yang sangat melimpah dengan Adanya
 
 Nah untuk output PHP Sendiri yang perlu kit ketahui saat ini ada 4 Yakni `echo` dan `print` yang fungsinya menampilkan berupa variabel ataupun tulisan. Kemudian ketiga ada `print_r` untuk menampilkan array dan `var_dump` untuk menampilkan detail variabel
 
-Oke mudahnya bisa dicoba langsung menggunakan [Percobaan Output](/1. Sintaks Dasar/Output.php) dijalankan ya. Nah bisa dilihat penjelasan detail dan hasilnya
+Oke mudahnya bisa dicoba langsung menggunakan `Belajar PHP\1. Sintaks Dasar\Output.php` dijalankan ya. Nah bisa dilihat penjelasan detail dan hasilnya
+
+[Percobaan Output](/1. Sintaks Dasar/Output.php) 
 
 - echo
 

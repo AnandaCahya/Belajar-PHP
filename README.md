@@ -19,9 +19,50 @@ Pada tahun 2004 muncul nih PHP 5 Dengan fitur yang sangat melimpah dengan Adanya
 
 ```php
 <?php
-# Isinya disini
+// Isinya disini
 ?>
 ```
 
 - Case sensitive dimana harus sesuai besar kecilnya
 - Kemudian menggunakan Titik Koma di akhir perintah
+
+## Pemahaman Dasar
+
+### 1. Sintaks Dasar PHP
+
+#### 1.1 Output PHP
+
+Nah untuk output PHP Sendiri yang perlu kit ketahui saat ini ada 4 Yakni `echo` dan `print` yang fungsinya menampilkan berupa variabel ataupun tulisan. Kemudian ketiga ada `print_r` untuk menampilkan array dan `var_dump` untuk menampilkan detail variabel
+
+Oke mudahnya bisa dicoba langsung menggunakan `\Belajar PHP\1. Sintaks Dasar\Output.php` dijalankan ya. Nah bisa dilihat penjelasan detail dan hasilnya
+
+- echo
+
+```php
+// Untuk ini bisa langsung seperti ini
+echo "Nama saya Ananda"
+```
+
+- print
+
+```php
+// Cara penulisannya juga sama dengan yang diatas
+print "Nama saya adalah Panji"
+```
+
+- print_r
+
+```php
+// Nah yang ini menggunakan tanda kurung
+print_r("Nama saya Adalah Ananda")
+```
+- var_dump
+
+```php
+// Untuk yang ini sama seperti print_r dia membutuhkan tanda kurung
+var_dump("Nama saya Ananda")
+```
+
+Namun untuk yang ini spesial ya. Dimana dia akan menampilkan detail dari variabel yang contohnya akan tampil begini
+
+[Tampilan dari var_dump](/github/var_dump.png)

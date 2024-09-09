@@ -4,6 +4,53 @@ Terimakasih telah menggunakan repo saya untuk belajar dan mencari apa yang ingin
 
 Oke baiklah selamat mencoba 🥰
 
+##
+
+### Instalasi
+
+Ada 2 cara untuk menggunakan PHP. Yaitu Client Side dan Server Side. Apa itu
+
+`client-side merujuk pada segala sesuatu yang terjadi di sisi pengguna (browser)` Yang artinya apa yang dilihat oleh user atau pengunjung web itu adalah client side proggraming. Sebaliknya yang tidak dapat dilihat oleh pengguna adalah `server-side`
+
+#### Instalasi
+
+##### Web / Client Side
+
+1. Silahkan install `XAMPP`, `LAMPP`, `MAMPP`, `WAMPP`. (Pilih salah satu, Untuk Windows saya rekomendasikan menggunakan `XAMPP` dan Linux `LAMP`)
+2. Kalau sudah jalankan buka aplikasi. Silahkan `start` pada bagian Apache
+
+![Jalankan XAMPP](/github/xampp_start.png)
+
+3. Nah download dan ekstrak Belajar PHP di github ini dan letakkan di mana XAMPP / LAMPP kalian ada
+
+![Disini](/github/placement.png)
+
+Letakkan Folder yang kalian downlad disitu. Agar bisa kalian lihat hasil PHPNya harus diletakkan pada folder  `XAMPP` dan didalam `htdocs` seperti diatas
+
+4. Silahkan buka browser kalian dan ketikan pada kolom url dengan `localhost`. Misalnya saya beri nama `Belajar PHP` dan saya buka di browser seperti ini
+
+![Seperti ini](/github/contoh_folder_belajar.png)
+
+##### Server / Server Side
+
+1. [Download](https://www.php.net/downloads.php) PHP terlebih dahulu. Pilih sesuai dengan sistem operasi kalian
+2. Kemudian jalankan setup dari PHP ini. Untuk caranya berbeda beda setiap sistem operasi
+
+> Untuk windows saya menggunakan chocolatey. jadi buat kalian yang menggunakan chocolatey bisa langsumg ketikan `choco install php`
+
+Dan saya menggunakan debian dan juga arch linux. Untuk keduanya bisa seperti ini saja
+
+- Arch Linux
+```bash
+sudo pacman -S php
+```
+
+- Debian
+
+```bash
+sudo apt install php
+```
+
 ## Catatan
 
 ### Sejarah
@@ -68,3 +115,87 @@ var_dump("Nama saya Ananda")
 Namun untuk yang ini spesial ya. Dimana dia akan menampilkan detail dari variabel yang contohnya akan tampil begini
 
 ![Tampilan dari var_dump](/github/var_dump.png)
+
+#### 1.2 Penulisan Sintaks PHP
+
+Untuk ini kalian akan mencoba eksperimen membuat PHP Tersebut bersama dengan HTML. Nah dalam hal ini PHP Memiliki 2 Cara untuk penggunaannya Pada PHP Untuk web yaitu
+
+##### 1.2.1 PHP didalam HTML
+
+Nah untuk yang pertama adalah PHP Didalam HTML. Untuk caranya simpel sekali sebagai eksperimen
+
+Selayaknya HTML Pasti kita akan menuliskan
+
+```php
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML dengan PHP Didalamnya</title>
+</head>
+<body>
+    
+</body>
+</html>
+```
+
+Nah kita akan fokus kepada bagian `body` dimana disana kita akan menyempilkan atau memasukan php kedalamnya. Bisa di coba untuk menambahkan
+
+```php
+<h1>Selamat di Portofolio saya, Nama saya <?php echo "Ananda Cahya" ?></h1>
+```
+
+ Sebagai contoh seperti ini
+
+ ![Penulisan PHP Didalam HTML](/github/contoh_penulisan_sintaks_php_dalam_html.png)
+
+ [Coba Ini](/1. Sintaks Dasar/PenulisanSintaks.php)
+
+ Hasilnya akan seperti ini
+
+![Hasil Penulisan PHP Didalam HTML](/github/hasil_penulisan_sintaks_php_dalam_html.png)
+
+`Kalau PHP Nya lebih dari satu bagaimana? Bisa tidak?`
+Bisa ya. Kalau tidak percaya silahkan coba ini
+
+```php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML dengan PHP Didalamnya</title>
+</head>
+<body>
+    <h1>Selamat di Portofolio saya, Nama saya <?php echo "Ananda Cahya" ?></h1>
+    <h4>Role saya lebih sering ke bagian <?php echo "Frontend Developer" ?></h4>
+</body>
+</html>
+```
+
+##### 1.2.2 HTML didalam PHP
+
+Sama seperti yang ditulis untuk yang satu ini kita akan mengeluarkan html menggunakan PHP. Kira kira seperti ini
+
+```php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML dengan PHP</title>
+</head>
+<body>
+    <p>
+        <?php
+        //Didalamnya ada html
+        echo "Saya adalah proggramer berasal dari <b>Indonesia</b>"
+        ?>
+    </p>
+</body>
+</html>
+```
+
+Bisa dilihat disana terdapat tulisan indonesia yang di bold agar menjadi lebih tebal
+
+[Coba semua Sintaks Dasar](/1.%20Sintaks%20Dasar/PenulisanSintaks.php)

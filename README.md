@@ -322,8 +322,8 @@ echo $angka;
 Kita ambil contoh sebelumnya nah ini adalah assignment ke variabel. Terus yang aritmatika fungsinya apa?. Nah kira kira begini
 
 ```php
-$umur = 18
-$umur += 5
+$umur = 18;
+$umur += 5;
 ```
 
 Berfungsi? Ya tentu maka umur berubah menjadi 23 karena 18 + 5 sama dengan 23. Kemudian dia menetapkan nilai pada variabel umur secara langsung
@@ -331,9 +331,9 @@ Berfungsi? Ya tentu maka umur berubah menjadi 23 karena 18 + 5 sama dengan 23. K
 Kalau string? Iya begini
 
 ```php
-$nama = "Ananda"
-$nama .= " "
-$nama .= "Cahya"
+$nama = "Ananda";
+$nama .= " ";
+$nama .= "Cahya";
 ```
 
 Seharusnya menjadi Ananda Cahya
@@ -343,7 +343,7 @@ Seharusnya menjadi Ananda Cahya
 Sama seperti namanya yang artinya membandingkan mana yang tertinggi dan terendah, Itu adalah fungsi dari operator ini. Yang sering digunakan adalah lebih besar dan lebih kecil dari. Bagaimana cara menggunakannya
 
 ```php
-var_dump(10 > 5)
+var_dump(10 > 5);
 ```
 
 Nah sebagai contoh kita akan menggunakan var dump untuk mengetahui nilai jawabannya. 10 kan lebih besar dari 5 maka harusnya dia bener dong. Nah dijawablah true sama si perbandingan. Silahkan di coba
@@ -355,12 +355,12 @@ Nah yang ini fungsinya adalah untuk memeriksa apakah jawaban dari 2 variabel sam
 Contoh
 
 ```php
-var_dump(10 === "10")
+var_dump(10 === "10");
 ```
 Apakah benar. Tidak salah, jika programnya membaca ini akan beranggapan hal yang sama. Lho salahnya dimana kan sama sama sepuluhnya. Nggak bisa ya, karena sepuluhnya itu satu bilangan bulat dan satunya teks atau string
 
 ```php
-var_dump(10 !== "10")
+var_dump(10 !== "10");
 ```
 Kalau ini baru benar karena dia butuh validasi jika mereka itu berbeda, dan ternyata beneran berbeda maka dia akan mengiyakan.
 
@@ -369,13 +369,13 @@ Kalau ini baru benar karena dia butuh validasi jika mereka itu berbeda, dan tern
 Untuk ini dia fungsinya adalah untuk memastikan jika terdapat 2 perbandingan yang memiliki jawaban yang sama atau tidak
 
 ```php
-var_dump(10 > 5 && 3 > 4)
+var_dump(10 > 5 && 3 > 4);
 ```
 
 Sebagai contoh ini nah dia memiliki 2 jawaban berbeda. Antara satu benar dan satunya lagi salah. Untuk itu karena dia membutuhkan keduanya benar dia akan menjawab hasil dari perbandingan keduanya tidak memenuhi syaratnya atau `false`
 
 ```php
-var_dump(10 > 5 || 3 > 4)
+var_dump(10 > 5 || 3 > 4);
 ```
 
 Berbeda dengan sebelumnya. Kali ini dia hany membutuhkan salah satunya benar. Maka dia akan mengiyakan dan menganggap sudah menenuhi syarat.
